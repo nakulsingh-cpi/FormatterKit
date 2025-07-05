@@ -1,0 +1,107 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "FormatterKit-arm64-apple-macosx15.0-debug.module": ["<FormatterKit-arm64-apple-macosx15.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<FormatterKit-arm64-apple-macosx15.0-debug.module>"]
+  "test": ["<FormatterKit-arm64-apple-macosx15.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/nakulsingh/Documents/FormatterKit/FormatterKit/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/NSBundle+FormatterKit.m.o":
+    tool: clang
+    inputs: ["/Users/nakulsingh/Documents/FormatterKit/FormatterKit/NSBundle+FormatterKit.m"]
+    outputs: ["/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/NSBundle+FormatterKit.m.o"]
+    description: "Compiling FormatterKit NSBundle+FormatterKit.m"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx10.13","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/index/store","-fmodules","-fmodule-name=FormatterKit","-fmodules-cache-path=/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/ModuleCache","-I","/Users/nakulsingh/Documents/FormatterKit/FormatterKit/include","-I/Users/nakulsingh/Documents/FormatterKit/FormatterKit","-isysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-fPIC","-g","-MD","-MT","dependencies","-MF","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/NSBundle+FormatterKit.m.d","-c","/Users/nakulsingh/Documents/FormatterKit/FormatterKit/NSBundle+FormatterKit.m","-o","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/NSBundle+FormatterKit.m.o"]
+    deps: "/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/NSBundle+FormatterKit.m.d"
+
+  "/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTAddressFormatter.m.o":
+    tool: clang
+    inputs: ["/Users/nakulsingh/Documents/FormatterKit/FormatterKit/TTTAddressFormatter.m"]
+    outputs: ["/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTAddressFormatter.m.o"]
+    description: "Compiling FormatterKit TTTAddressFormatter.m"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx10.13","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/index/store","-fmodules","-fmodule-name=FormatterKit","-fmodules-cache-path=/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/ModuleCache","-I","/Users/nakulsingh/Documents/FormatterKit/FormatterKit/include","-I/Users/nakulsingh/Documents/FormatterKit/FormatterKit","-isysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-fPIC","-g","-MD","-MT","dependencies","-MF","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTAddressFormatter.m.d","-c","/Users/nakulsingh/Documents/FormatterKit/FormatterKit/TTTAddressFormatter.m","-o","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTAddressFormatter.m.o"]
+    deps: "/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTAddressFormatter.m.d"
+
+  "/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTArrayFormatter.m.o":
+    tool: clang
+    inputs: ["/Users/nakulsingh/Documents/FormatterKit/FormatterKit/TTTArrayFormatter.m"]
+    outputs: ["/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTArrayFormatter.m.o"]
+    description: "Compiling FormatterKit TTTArrayFormatter.m"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx10.13","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/index/store","-fmodules","-fmodule-name=FormatterKit","-fmodules-cache-path=/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/ModuleCache","-I","/Users/nakulsingh/Documents/FormatterKit/FormatterKit/include","-I/Users/nakulsingh/Documents/FormatterKit/FormatterKit","-isysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-fPIC","-g","-MD","-MT","dependencies","-MF","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTArrayFormatter.m.d","-c","/Users/nakulsingh/Documents/FormatterKit/FormatterKit/TTTArrayFormatter.m","-o","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTArrayFormatter.m.o"]
+    deps: "/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTArrayFormatter.m.d"
+
+  "/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTColorFormatter.m.o":
+    tool: clang
+    inputs: ["/Users/nakulsingh/Documents/FormatterKit/FormatterKit/TTTColorFormatter.m"]
+    outputs: ["/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTColorFormatter.m.o"]
+    description: "Compiling FormatterKit TTTColorFormatter.m"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx10.13","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/index/store","-fmodules","-fmodule-name=FormatterKit","-fmodules-cache-path=/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/ModuleCache","-I","/Users/nakulsingh/Documents/FormatterKit/FormatterKit/include","-I/Users/nakulsingh/Documents/FormatterKit/FormatterKit","-isysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-fPIC","-g","-MD","-MT","dependencies","-MF","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTColorFormatter.m.d","-c","/Users/nakulsingh/Documents/FormatterKit/FormatterKit/TTTColorFormatter.m","-o","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTColorFormatter.m.o"]
+    deps: "/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTColorFormatter.m.d"
+
+  "/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTLocationFormatter.m.o":
+    tool: clang
+    inputs: ["/Users/nakulsingh/Documents/FormatterKit/FormatterKit/TTTLocationFormatter.m"]
+    outputs: ["/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTLocationFormatter.m.o"]
+    description: "Compiling FormatterKit TTTLocationFormatter.m"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx10.13","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/index/store","-fmodules","-fmodule-name=FormatterKit","-fmodules-cache-path=/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/ModuleCache","-I","/Users/nakulsingh/Documents/FormatterKit/FormatterKit/include","-I/Users/nakulsingh/Documents/FormatterKit/FormatterKit","-isysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-fPIC","-g","-MD","-MT","dependencies","-MF","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTLocationFormatter.m.d","-c","/Users/nakulsingh/Documents/FormatterKit/FormatterKit/TTTLocationFormatter.m","-o","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTLocationFormatter.m.o"]
+    deps: "/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTLocationFormatter.m.d"
+
+  "/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTNameFormatter.m.o":
+    tool: clang
+    inputs: ["/Users/nakulsingh/Documents/FormatterKit/FormatterKit/TTTNameFormatter.m"]
+    outputs: ["/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTNameFormatter.m.o"]
+    description: "Compiling FormatterKit TTTNameFormatter.m"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx10.13","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/index/store","-fmodules","-fmodule-name=FormatterKit","-fmodules-cache-path=/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/ModuleCache","-I","/Users/nakulsingh/Documents/FormatterKit/FormatterKit/include","-I/Users/nakulsingh/Documents/FormatterKit/FormatterKit","-isysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-fPIC","-g","-MD","-MT","dependencies","-MF","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTNameFormatter.m.d","-c","/Users/nakulsingh/Documents/FormatterKit/FormatterKit/TTTNameFormatter.m","-o","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTNameFormatter.m.o"]
+    deps: "/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTNameFormatter.m.d"
+
+  "/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTOrdinalNumberFormatter.m.o":
+    tool: clang
+    inputs: ["/Users/nakulsingh/Documents/FormatterKit/FormatterKit/TTTOrdinalNumberFormatter.m"]
+    outputs: ["/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTOrdinalNumberFormatter.m.o"]
+    description: "Compiling FormatterKit TTTOrdinalNumberFormatter.m"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx10.13","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/index/store","-fmodules","-fmodule-name=FormatterKit","-fmodules-cache-path=/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/ModuleCache","-I","/Users/nakulsingh/Documents/FormatterKit/FormatterKit/include","-I/Users/nakulsingh/Documents/FormatterKit/FormatterKit","-isysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-fPIC","-g","-MD","-MT","dependencies","-MF","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTOrdinalNumberFormatter.m.d","-c","/Users/nakulsingh/Documents/FormatterKit/FormatterKit/TTTOrdinalNumberFormatter.m","-o","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTOrdinalNumberFormatter.m.o"]
+    deps: "/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTOrdinalNumberFormatter.m.d"
+
+  "/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTTimeIntervalFormatter.m.o":
+    tool: clang
+    inputs: ["/Users/nakulsingh/Documents/FormatterKit/FormatterKit/TTTTimeIntervalFormatter.m"]
+    outputs: ["/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTTimeIntervalFormatter.m.o"]
+    description: "Compiling FormatterKit TTTTimeIntervalFormatter.m"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx10.13","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/index/store","-fmodules","-fmodule-name=FormatterKit","-fmodules-cache-path=/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/ModuleCache","-I","/Users/nakulsingh/Documents/FormatterKit/FormatterKit/include","-I/Users/nakulsingh/Documents/FormatterKit/FormatterKit","-isysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-fPIC","-g","-MD","-MT","dependencies","-MF","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTTimeIntervalFormatter.m.d","-c","/Users/nakulsingh/Documents/FormatterKit/FormatterKit/TTTTimeIntervalFormatter.m","-o","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTTimeIntervalFormatter.m.o"]
+    deps: "/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTTimeIntervalFormatter.m.d"
+
+  "/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTURLRequestFormatter.m.o":
+    tool: clang
+    inputs: ["/Users/nakulsingh/Documents/FormatterKit/FormatterKit/TTTURLRequestFormatter.m"]
+    outputs: ["/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTURLRequestFormatter.m.o"]
+    description: "Compiling FormatterKit TTTURLRequestFormatter.m"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx10.13","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/index/store","-fmodules","-fmodule-name=FormatterKit","-fmodules-cache-path=/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/ModuleCache","-I","/Users/nakulsingh/Documents/FormatterKit/FormatterKit/include","-I/Users/nakulsingh/Documents/FormatterKit/FormatterKit","-isysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-fPIC","-g","-MD","-MT","dependencies","-MF","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTURLRequestFormatter.m.d","-c","/Users/nakulsingh/Documents/FormatterKit/FormatterKit/TTTURLRequestFormatter.m","-o","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTURLRequestFormatter.m.o"]
+    deps: "/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTURLRequestFormatter.m.d"
+
+  "/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTUnitOfInformationFormatter.m.o":
+    tool: clang
+    inputs: ["/Users/nakulsingh/Documents/FormatterKit/FormatterKit/TTTUnitOfInformationFormatter.m"]
+    outputs: ["/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTUnitOfInformationFormatter.m.o"]
+    description: "Compiling FormatterKit TTTUnitOfInformationFormatter.m"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx10.13","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/index/store","-fmodules","-fmodule-name=FormatterKit","-fmodules-cache-path=/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/ModuleCache","-I","/Users/nakulsingh/Documents/FormatterKit/FormatterKit/include","-I/Users/nakulsingh/Documents/FormatterKit/FormatterKit","-isysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-fPIC","-g","-MD","-MT","dependencies","-MF","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTUnitOfInformationFormatter.m.d","-c","/Users/nakulsingh/Documents/FormatterKit/FormatterKit/TTTUnitOfInformationFormatter.m","-o","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTUnitOfInformationFormatter.m.o"]
+    deps: "/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTUnitOfInformationFormatter.m.d"
+
+  "<FormatterKit-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/NSBundle+FormatterKit.m.o","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTAddressFormatter.m.o","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTArrayFormatter.m.o","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTColorFormatter.m.o","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTLocationFormatter.m.o","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTNameFormatter.m.o","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTOrdinalNumberFormatter.m.o","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTTimeIntervalFormatter.m.o","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTURLRequestFormatter.m.o","/Users/nakulsingh/Documents/FormatterKit/.build/arm64-apple-macosx/debug/FormatterKit.build/TTTUnitOfInformationFormatter.m.o"]
+    outputs: ["<FormatterKit-arm64-apple-macosx15.0-debug.module>"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/nakulsingh/Documents/FormatterKit/FormatterKit/","/Users/nakulsingh/Documents/FormatterKit/Package.swift","/Users/nakulsingh/Documents/FormatterKit/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
