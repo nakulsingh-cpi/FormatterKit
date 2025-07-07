@@ -1,0 +1,15 @@
+{
+  "originHash" : "911efdf01e3657dab2b07b8b0a507939ab223015c4214eab8d5c295271562dca",
+  "pins" : [
+    {
+      "identity" : "formatterkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nakulsingh-cpi/FormatterKit",
+      "state" : {
+        "branch" : "migration-test",
+        "revision" : "c57d0cdf386993c4947c3c534efe2771bc0b0df9"
+      }
+    }
+  ],
+  "version" : 3
+}

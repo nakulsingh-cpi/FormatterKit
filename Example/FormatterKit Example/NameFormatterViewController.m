@@ -23,7 +23,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "NameFormatterViewController.h"
 
-#import <FormatterKit/TTTNameFormatter.h>
+@import FormatterKit;
 
 NS_ENUM(NSUInteger, LocationFormatterViewControllerRowIndexes) {
     FirstLastNameRowIndex,

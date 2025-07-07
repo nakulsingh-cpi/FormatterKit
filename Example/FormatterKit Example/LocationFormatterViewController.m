@@ -23,7 +23,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "LocationFormatterViewController.h"
 
-#import <FormatterKit/TTTLocationFormatter.h>
+@import FormatterKit;
 
 NS_ENUM(NSUInteger, LocationFormatterViewControllerSectionIndexes) {
     CoordinatesSignedDegreesSectionIndex,

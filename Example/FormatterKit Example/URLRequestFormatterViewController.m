@@ -21,8 +21,10 @@
 // THE SOFTWARE.
 
 #import "URLRequestFormatterViewController.h"
-#import <FormatterKit/TTTURLRequestFormatter.h>
+
 #import <tgmath.h>
+
+@import FormatterKit;
 
 NS_ENUM(NSUInteger, URLRequestFormatterViewControllerSectionIndexes) {
     StandardSectionIndex,

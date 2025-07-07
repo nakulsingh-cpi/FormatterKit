@@ -22,7 +22,7 @@
 
 #import "TimeIntervalFormatterViewController.h"
 
-#import <FormatterKit/TTTTimeIntervalFormatter.h>
+@import FormatterKit;
 
 NS_ENUM(NSUInteger, TimeIntervalFormatterViewControllerSectionIndexes) {
     StandardPastSectionIndex,
