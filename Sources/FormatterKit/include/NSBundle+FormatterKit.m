@@ -34,12 +34,34 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
 #ifdef SWIFT_PACKAGE
-        // For SPM, use the main bundle or a resource bundle
-        formatterKitBundle = [NSBundle bundleWithIdentifier:@"FormatterKit"] ?: [NSBundle mainBundle];
+        // For SPM, first try to find the resource bundle
+        NSBundle *currentBundle = [NSBundle bundleForClass:[_TTTDummyClassForReferencingBundle class]];
+        
+        // Try to find FormatterKit.bundle in the SPM resource bundle
+        NSURL *bundleURL = [currentBundle URLForResource:@"FormatterKit" withExtension:@"bundle"];
+        if (bundleURL) {
+            formatterKitBundle = [NSBundle bundleWithURL:bundleURL];
+        }
+        
+        // Fallback: try different bundle locations
+        if (!formatterKitBundle) {
+            // Try in main bundle (for testing scenarios)
+            bundleURL = [[NSBundle mainBundle] URLForResource:@"FormatterKit" withExtension:@"bundle"];
+            if (bundleURL) {
+                formatterKitBundle = [NSBundle bundleWithURL:bundleURL];
+            }
+        }
+        
+        // Final fallback: use main bundle
+        if (!formatterKitBundle) {
+            formatterKitBundle = [NSBundle mainBundle];
+        }
 #else
         // Original CocoaPods implementation
         NSString *bundlePath = [[NSBundle bundleForClass:[_TTTDummyClassForReferencingBundle class]] pathForResource:@"FormatterKit" ofType:@"bundle"];
-        if (bundlePath) formatterKitBundle = [NSBundle bundleWithPath:bundlePath];
+        if (bundlePath) {
+            formatterKitBundle = [NSBundle bundleWithPath:bundlePath];
+        }
 #endif
     });
     

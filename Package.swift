@@ -19,6 +19,10 @@ let package = Package(
         .target(
             name: "FormatterKit",
             path: "Sources/FormatterKit",
+            exclude: ["include/Info.plist"],
+            resources: [
+                .copy("include/FormatterKit.bundle")
+            ],
             publicHeadersPath: "include",
             cSettings: [
                 .headerSearchPath("include"),
