@@ -19,6 +19,10 @@
 		50B8F3151D75BF7700384040 /* FormatterKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 50B8F3131D75BF7700384040 /* FormatterKit.bundle */; };
 		50B8F3161D75BF7700384040 /* FormatterKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 50B8F3131D75BF7700384040 /* FormatterKit.bundle */; };
 		50B8F3171D75BF7700384040 /* FormatterKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 50B8F3131D75BF7700384040 /* FormatterKit.bundle */; };
+		54D4E8C12E1C407B00A79A49 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D4E8C02E1C407B00A79A49 /* Package.swift */; };
+		54D4E8C22E1C407B00A79A49 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D4E8C02E1C407B00A79A49 /* Package.swift */; };
+		54D4E8C32E1C407B00A79A49 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D4E8C02E1C407B00A79A49 /* Package.swift */; };
+		54D4E8C42E1C407B00A79A49 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D4E8C02E1C407B00A79A49 /* Package.swift */; };
 		5B08B66D1CA69F99009541EC /* FormatterKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B08B66C1CA69F99009541EC /* FormatterKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B08B6931CA6A0C3009541EC /* TTTAddressFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B08B6811CA6A0C3009541EC /* TTTAddressFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B08B6941CA6A0C3009541EC /* TTTAddressFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B08B6811CA6A0C3009541EC /* TTTAddressFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -101,6 +105,7 @@
 		50B7E6B11D706201006BEE5C /* NSBundle+FormatterKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+FormatterKit.h"; sourceTree = "<group>"; };
 		50B7E6B21D706201006BEE5C /* NSBundle+FormatterKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+FormatterKit.m"; sourceTree = "<group>"; };
 		50B8F3131D75BF7700384040 /* FormatterKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FormatterKit.bundle; sourceTree = "<group>"; };
+		54D4E8C02E1C407B00A79A49 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		5B08B6691CA69F99009541EC /* FormatterKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FormatterKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B08B66C1CA69F99009541EC /* FormatterKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormatterKit.h; sourceTree = "<group>"; };
 		5B08B66E1CA69F99009541EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -162,6 +167,7 @@
 		5B08B65F1CA69F99009541EC = {
 			isa = PBXGroup;
 			children = (
+				54D4E8C02E1C407B00A79A49 /* Package.swift */,
 				5B08B66B1CA69F99009541EC /* FormatterKit */,
 				5B08B66A1CA69F99009541EC /* Products */,
 			);
@@ -369,16 +375,19 @@
 				TargetAttributes = {
 					5B08B6681CA69F99009541EC = {
 						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 1630;
 					};
 					5B08B6781CA6A078009541EC = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 1630;
 					};
 					FE4100BB1D4995EE0059B762 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 1630;
 					};
 					FE65C46C1D1EF59200A8AC9D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 1630;
 					};
 				};
 			};
@@ -482,6 +491,7 @@
 				5B08B6B51CA6A0C3009541EC /* TTTURLRequestFormatter.m in Sources */,
 				5B08B6B11CA6A0C3009541EC /* TTTUnitOfInformationFormatter.m in Sources */,
 				5B08B6A11CA6A0C3009541EC /* TTTLocationFormatter.m in Sources */,
+				54D4E8C12E1C407B00A79A49 /* Package.swift in Sources */,
 				5B08B69D1CA6A0C3009541EC /* TTTColorFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +509,7 @@
 				5B08B6B61CA6A0C3009541EC /* TTTURLRequestFormatter.m in Sources */,
 				5B08B6B21CA6A0C3009541EC /* TTTUnitOfInformationFormatter.m in Sources */,
 				5B08B6A21CA6A0C3009541EC /* TTTLocationFormatter.m in Sources */,
+				54D4E8C22E1C407B00A79A49 /* Package.swift in Sources */,
 				5B08B69E1CA6A0C3009541EC /* TTTColorFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +527,7 @@
 				FE4100D61D4996310059B762 /* TTTURLRequestFormatter.m in Sources */,
 				FE4100D51D4996310059B762 /* TTTUnitOfInformationFormatter.m in Sources */,
 				FE4100D11D4996310059B762 /* TTTLocationFormatter.m in Sources */,
+				54D4E8C42E1C407B00A79A49 /* Package.swift in Sources */,
 				FE4100D01D4996310059B762 /* TTTColorFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,6 +545,7 @@
 				FE65C47B1D1EF72100A8AC9D /* TTTLocationFormatter.m in Sources */,
 				FE65C48B1D1F066A00A8AC9D /* TTTAddressFormatter.m in Sources */,
 				FE65C48A1D1F066700A8AC9D /* TTTNameFormatter.m in Sources */,
+				54D4E8C32E1C407B00A79A49 /* Package.swift in Sources */,
 				FE65C47A1D1EF72100A8AC9D /* TTTColorFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -657,6 +670,7 @@
 		5B08B6721CA69F99009541EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -670,6 +684,7 @@
 				PRODUCT_NAME = FormatterKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -677,6 +692,7 @@
 		5B08B6731CA69F99009541EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -697,6 +713,7 @@
 		5B08B67F1CA6A078009541EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -712,12 +729,15 @@
 				PRODUCT_NAME = FormatterKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
 		5B08B6801CA6A078009541EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -733,12 +753,14 @@
 				PRODUCT_NAME = FormatterKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
 		FE4100C11D4995EE0059B762 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -752,6 +774,8 @@
 				PRODUCT_NAME = FormatterKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Debug;
@@ -759,6 +783,7 @@
 		FE4100C21D4995EE0059B762 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -772,6 +797,7 @@
 				PRODUCT_NAME = FormatterKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;
@@ -780,6 +806,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -793,6 +820,8 @@
 				PRODUCT_NAME = FormatterKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Debug;
@@ -801,6 +830,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -814,6 +844,7 @@
 				PRODUCT_NAME = FormatterKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Release;
