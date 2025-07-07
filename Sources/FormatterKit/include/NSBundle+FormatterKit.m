@@ -29,15 +29,21 @@
 @implementation NSBundle (FormatterKit)
 
 + (NSBundle *)formatterKitBundle {
-    static NSBundle *fomatterKitBundle = nil;
-
+    static NSBundle *formatterKitBundle = nil;
+    
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
+#ifdef SWIFT_PACKAGE
+        // For SPM, use the main bundle or a resource bundle
+        formatterKitBundle = [NSBundle bundleWithIdentifier:@"FormatterKit"] ?: [NSBundle mainBundle];
+#else
+        // Original CocoaPods implementation
         NSString *bundlePath = [[NSBundle bundleForClass:[_TTTDummyClassForReferencingBundle class]] pathForResource:@"FormatterKit" ofType:@"bundle"];
-        if (bundlePath) fomatterKitBundle = [NSBundle bundleWithPath:bundlePath];
+        if (bundlePath) formatterKitBundle = [NSBundle bundleWithPath:bundlePath];
+#endif
     });
-
-    return fomatterKitBundle;
+    
+    return formatterKitBundle ?: [NSBundle mainBundle];
 }
 
 @end
