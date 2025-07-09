@@ -34,8 +34,43 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
 #ifdef SWIFT_PACKAGE
-        // For SPM, use the main bundle or a resource bundle
-        formatterKitBundle = [NSBundle bundleWithIdentifier:@"FormatterKit"] ?: [NSBundle mainBundle];
+        // For SPM, look for the resource bundle
+        NSBundle *moduleBundle = [NSBundle bundleForClass:[_TTTDummyClassForReferencingBundle class]];
+        
+        // Try different possible bundle names that SPM might create
+        NSArray *possibleBundleNames = @[
+            @"FormatterKit_FormatterKit",
+            @"FormatterKit",
+            @"FormatterKit_Resources"
+        ];
+        
+        for (NSString *bundleName in possibleBundleNames) {
+            NSString *bundlePath = [moduleBundle pathForResource:bundleName ofType:@"bundle"];
+            if (bundlePath) {
+                NSBundle *outerBundle = [NSBundle bundleWithPath:bundlePath];
+                if (outerBundle) {
+                    // Check if there's a nested FormatterKit.bundle inside
+                    NSString *nestedBundlePath = [outerBundle pathForResource:@"FormatterKit" ofType:@"bundle"];
+                    if (nestedBundlePath) {
+                        formatterKitBundle = [NSBundle bundleWithPath:nestedBundlePath];
+                        NSLog(@"Found nested FormatterKit bundle at: %@", nestedBundlePath);
+                    } else {
+                        formatterKitBundle = outerBundle;
+                        NSLog(@"Using outer bundle: %@", bundlePath);
+                    }
+                    break;
+                }
+            }
+        }
+        
+        // If no separate bundle found, check if resources are directly in the module bundle
+        if (!formatterKitBundle) {
+            NSArray *localizations = [moduleBundle localizations];
+            if ([localizations count] > 1) { // More than just "Base"
+                formatterKitBundle = moduleBundle;
+                NSLog(@"Using module bundle directly for FormatterKit resources");
+            }
+        }
 #else
         // Original CocoaPods implementation
         NSString *bundlePath = [[NSBundle bundleForClass:[_TTTDummyClassForReferencingBundle class]] pathForResource:@"FormatterKit" ofType:@"bundle"];
@@ -44,6 +79,11 @@
     });
     
     return formatterKitBundle ?: [NSBundle mainBundle];
+}
+
++ (NSBundle *)packageBundle {
+    // Get the bundle for the class itself. This will be the bundle containing your package's resources.
+    return [NSBundle bundleForClass:[self class]];
 }
 
 @end

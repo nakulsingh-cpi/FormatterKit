@@ -19,6 +19,9 @@ let package = Package(
         .target(
             name: "FormatterKit",
             path: "Sources/FormatterKit",
+            resources: [
+                .copy("Resources/FormatterKit.bundle")
+            ],
             publicHeadersPath: "include",
             cSettings: [
                 .headerSearchPath("include"),
@@ -31,5 +34,10 @@ let package = Package(
                 .linkedFramework("CoreLocation")
             ]
         ),
+        .testTarget(
+            name: "FormatterKitTests",
+            dependencies: ["FormatterKit"],
+            path: "Tests/FormatterKitTests"
+        )
     ]
 )
